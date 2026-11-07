@@ -22,6 +22,7 @@ app.use((req, res, next) => {
 });
 
 // define error-handling middleware last, after other app.use() and routes calls
+// eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
   // Middleware xử lý lỗi tập trung.
   // Trong các đoạn code xử lý ở các route, gọi next(error) sẽ chuyển về middleware xử lý lỗi này
